@@ -4,11 +4,28 @@
 	<title>Time Based Modal Workshop</title>
  	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   	<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+  	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 </head>
-	<body>
+	<body id="page-body" onload="setTimeout(modalPopup, 3000);">
+ 	<!-- onload="setTimeout(modalPopup, 3000);" -->
+
+		<!-- Modal Window -->
+		<div id="newsletter-modal" class="modal">
+		  <div class="modal-content">
+		  	<h2>BOX Newsletter</h2>
+		    <span class="close">x</span>
+		    <p>Enter your Email below to recieve weekly updates!</p>
+		    <form id="page-form">
+			  	<label for="email">Email</label>
+			 	<input type="email" name="email" id="email">
+			  	<button type="button" id="submit">Submit</button>
+			</form>
+		  </div>
+		</div>
+
 		<header>
 		  <div class="navbar-fixed">
 		  	<!-- Dropdown Structure -->
@@ -24,7 +41,7 @@
 		        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 		        <ul class="right hide-on-med-and-down">
 		          <!-- Dropdown Trigger -->
-      			  <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+      			  <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
 		        </ul>
 		      </div>
 		    </nav>
@@ -33,31 +50,52 @@
 
 		<section>
 		  <div class="carousel carousel-slider center" data-indicators="true">
-		    <div class="carousel-item red white-text" href="#one!">
-		      <h2>Box</h2>
+		    <div class="carousel-item red white-text one" href="#one!">
+		      <h2>BOX</h2>
 		      <p class="white-text">Sneaker Shop</p>
 		    </div>
 		    <div class="carousel-item amber white-text" href="#two!">
-		      <h2>Box</h2>
+		      <h2>BOX</h2>
 		      <p class="white-text"></p>
 		    </div>
 		    <div class="carousel-item green white-text" href="#three!">
-		      <h2>Box</h2>
+		      <h2>BOX</h2>
 		      <p class="white-text"></p>
 		    </div>
 		    <div class="carousel-item blue white-text" href="#four!">
-		      <h2>Box</h2>
+		      <h2>BOX</h2>
 		      <p class="white-text"></p>
 		    </div>
 		  </div>
+		</section>
+
+		<section class="center-align">
+
+			<div>
+				<div class="row center-align">
+			      <div class="col s3">This div is 3-columns wide</div>
+			      <div class="col s3">This div is 3-columns wide</div>
+			      <div class="col s3">This div is 3-columns wide</div>
+			    </div>
+				<div class="row center-align">
+			      <div class="col s3">This div is 3-columns wide</div>
+			      <div class="col s3">This div is 3-columns wide</div>
+			      <div class="col s3">This div is 3-columns wide</div>
+			    </div>
+			    <div class="row center-align">
+			      <div class="col s3">This div is 3-columns wide</div>
+			      <div class="col s3">This div is 3-columns wide</div>
+			      <div class="col s3">This div is 3-columns wide</div>
+			    </div>
+			</div>
 		</section>
 
         <footer class="page-footer">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                <h5 class="white-text">Shoebox aka BOX</h5>
+                <p class="grey-text text-lighten-4">Delivering latest trends at affordable prices.</p>
               </div>
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Social</h5>
@@ -70,12 +108,10 @@
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            © 2014 Created by JLM
             </div>
           </div>
         </footer>
-
 
       	<!--Import jQuery before materialize.js-->
       	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
