@@ -1,0 +1,13 @@
+nav {
+	background-color: black;
+}
+
+footer.page-footer {
+	background-color: black;
+	margin-top: 0px;
+}
+
+#shoebox{
+	height: 60px;
+	margin-left: 10px;
+}
