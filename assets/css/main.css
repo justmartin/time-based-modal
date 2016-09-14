@@ -23,6 +23,11 @@ footer.page-footer {
     background-repeat: no-repeat;
 }
 
+.shoe-photo{
+	height: 200px;
+}
+
+
 /*Modal Styling*/
 /* The Modal (background) */
 .modal {
@@ -41,12 +46,16 @@ footer.page-footer {
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 10% auto; /* 10% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     box-shadow: 0 0 1em;
     width: 40%; /* Could be more or less, depending on screen size */
     height: 60%;
+}
+
+#newsletter-modal{
+	height: 500px;
 }
 
 /* The Close Button */
