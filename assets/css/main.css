@@ -11,16 +11,40 @@ footer.page-footer {
 	margin-top: 0px;
 }
 
-#shoebox{
-	height: 60px;
-	margin-left: 10px;
-}
-
 .one{
 	background-image: url("../images/shoebox.png");
 	overflow: hidden;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+.two{
+	background-image: url("../images/money-bag.svg");
+	overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 150px;
+}
+
+.three{
+	background-image: url("../images/thief.svg");
+	overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 150px;
+}
+
+.four{
+	background-image: url("../images/hurry.svg");
+	overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 150px;
+}
+
+#shoebox{
+	height: 60px;
+	margin-left: 10px;
 }
 
 .shoe-photo{
