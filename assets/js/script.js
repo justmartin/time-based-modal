@@ -27,8 +27,6 @@ document.getElementById("submit").onclick = function() {
 		return;
 	};
 	modal.style.display = "none";
-
-
 };
 
 document.getElementById("not-today").onclick = function() {
