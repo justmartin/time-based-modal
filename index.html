@@ -3,7 +3,7 @@
 <head>
 	<title>Time Based Modal Workshop</title>
  	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  	<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+  	<link type="text/css" rel="stylesheet" href="assets/css/materialize.css"  media="screen,projection"/>
   	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,12 +15,12 @@
 		<div id="newsletter-modal" class="modal">
 		  <div class="modal-content">
 		  	<h2>BOX Newsletter</h2>
-		    <span class="close">x</span>
 		    <p>Enter your Email below to recieve weekly updates!</p>
 		    <form id="page-form">
 			  	<label for="email">Email</label>
 			 	<input type="email" name="email" id="email">
-			  	<button type="button" id="submit">Submit</button>
+			  	<a id="submit" class="waves-effect waves-light btn"><i class="material-icons left">thumb_up</i>Submit</a>
+			  	<a id="not-today" class="waves-effect waves-light btn"><i class="material-icons left">thumb_down</i>Not Today</a>
 			</form>
 		  </div>
 		</div>
@@ -69,60 +69,65 @@
 		</section>
 
 		<section>
+			<div id="shoe-header" class="row center-align">
+				<h3 class="center-align">What's In This Week's BOX</h3>
+				<img class="center-align" id="down-arrow" src="assets/images/down-arrow.svg">
+			</div>
+
 			<div class="row center-align">
 		      <div class="col s4">
 		      	<img class="shoe-photo" src="assets/images/aj12.jpg">
-		      	<p>$45</p>
+		      	<p>Air Jordan XII - $80</p>
 		      </div>
 		      <div class="col s4">
 		      	<img class="shoe-photo" src="assets/images/aj12b.jpg">
-		      	<p>$45</p>
+		      	<p>Air Jordan XII - $80</p>
 		      </div>
 		      <div class="col s4">
 		      	<img class="shoe-photo" src="assets/images/aj5.jpg">
-		      	<p>$45</p>
+		      	<p>Air Jordan V - $85</p>
 		      </div>
 		    </div>
 			<div class="row center-align">
 		      <div class="col s4">
 		      	<img class="shoe-photo" src="assets/images/aj7.jpg">
-		      	<p>$45</p>
+		      	<p>Air Jordan VII - $85</p>
 		      </div>
 		      <div class="col s4">
 		      	<img class="shoe-photo" src="assets/images/airmax.jpg">
-		      	<p>$45</p>
+		      	<p>Nike Air Max - $45</p>
 		      </div>
 		      <div class="col s4">
 		      	<img class="shoe-photo" src="assets/images/chucks.jpg">
-		      	<p>$45</p>
+		      	<p>Converse Chuck II - $35</p>
 		      </div>
 		    </div>
 		    <div class="row center-align">
 		      <div class="col s4">
 		      	<img class="shoe-photo" src="assets/images/hurache.jpg">
-		      	<p>$45</p>
+		      	<p>Nike Huarache - $50</p>
 		      </div>
 		      <div class="col s4">
 		      	<img class="shoe-photo" src="assets/images/lunar.jpg">
-		      	<p>$45</p>
+		      	<p>Nike LunarEpic - $55</p>
 		      </div>
 		      <div class="col s4">
 		      	<img class="shoe-photo" src="assets/images/nmd.jpg">
-		      	<p>$45</p>
+		      	<p>Adidas NMD - $55</p>
 		      </div>
 		    </div>
 		    <div class="row center-align">
 		      <div class="col s4">
 		      	<img class="shoe-photo" src="assets/images/racer.jpg">
-		      	<p>$45</p>
+		      	<p>Nike Flyknit Racer - $60</p>
 		      </div>
 		      <div class="col s4">
 		      	<img class="shoe-photo" src="assets/images/roshe.jpg">
-		      	<p>$45</p>
+		      	<p>Nike Roshe One - $40</p>
 		      </div>
 		      <div class="col s4">
 		      	<img class="shoe-photo" src="assets/images/stan.jpg">
-		      	<p>$45</p>
+		      	<p>Adidas Stan Smith - $40</p>
 		      </div>
 		    </div>
 		</section>
@@ -137,8 +142,8 @@
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Social</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                  <li><a class="grey-text text-lighten-3" href="http://www.instagram.com">Instagram</a></li>
+                  <li><a class="grey-text text-lighten-3" href="http://www.twitter.com">Twitter</a></li>
                 </ul>
               </div>
             </div>

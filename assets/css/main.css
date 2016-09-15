@@ -27,6 +27,24 @@ footer.page-footer {
 	height: 200px;
 }
 
+.btn, .btn-large{
+	background-color: black;
+	color: white;
+}
+
+.btn:hover, .btn-large:hover{
+	background-color: grey;
+}
+
+#shoe-header{
+	margin-top: 100px;
+}
+
+#down-arrow{
+	height: 70px;
+	margin-top: 20px;
+}
+
 
 /*Modal Styling*/
 /* The Modal (background) */
@@ -51,24 +69,4 @@ footer.page-footer {
     border: 1px solid #888;
     box-shadow: 0 0 1em;
     width: 40%; /* Could be more or less, depending on screen size */
-    height: 60%;
-}
-
-#newsletter-modal{
-	height: 500px;
-}
-
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
 }

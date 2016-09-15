@@ -17,13 +17,21 @@ var modalPopup = function(){
 	var span = document.getElementsByClassName("close")[0];
 	//displays the Modal
 	modal.style.display = "block";
-	// When the user clicks on <span> (x), close the modal
-	span.onclick = function() {
-	modal.style.display = "none";
-	}
 }
 
 document.getElementById("submit").onclick = function() {
+	var modal = document.getElementById('newsletter-modal');
+	var email = document.getElementById("email").value;
+	if (email == "") {
+		alert("Please enter your email to receive our newsletter!");
+		return;
+	};
+	modal.style.display = "none";
+
+
+};
+
+document.getElementById("not-today").onclick = function() {
 	var modal = document.getElementById('newsletter-modal');
 	modal.style.display = "none";
 };
